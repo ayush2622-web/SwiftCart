@@ -19,6 +19,8 @@ const Register = () => {
         body: JSON.stringify({ name, email, password })
       });
       const data = await res.json();
+      console.log("Status:",res.status);
+      console.log("Response:",data);
       if (res.ok) {
         alert('Registration Successful! Please check your email for the Welcome OTP.');
         login(data);
