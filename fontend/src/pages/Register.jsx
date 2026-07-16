@@ -22,7 +22,7 @@ const Register = () => {
       console.log("Status:",res.status);
       console.log("Response:",data);
       if (res.ok) {
-        alert('Registration Successful! Please check your email for the Welcome OTP.');
+        alert('Registration Successful!');
         login(data);
         navigate('/');
       } else {
